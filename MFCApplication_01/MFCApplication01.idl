@@ -1,0 +1,29 @@
+﻿// MFCApplication01.idl: источник библиотеки типов для MFCApplication_01.exe
+
+// Этот файл будет обработан компилятором MIDL для создания
+// библиотека типов (MFCApplication01.tlb).
+
+[ uuid(8a6cfe32-240c-455d-951b-239423f3de8e), version(1.0) ]
+library MFCApplication_01
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Первичный интерфейс диспетчеризации для CMFCApplication01Doc
+
+	[ uuid(455549b7-d4f3-4ea0-b57c-31a9856acb39) ]
+	dispinterface IMFCApplication_01
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Сведения о классе CMFCApplication01Doc
+
+	[ uuid(04257e43-ecb4-4a89-97e0-345d254c15d5) ]
+	coclass CMFCApplication01Doc
+	{
+		[default] dispinterface IMFCApplication_01;
+	};
+};
